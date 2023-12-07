@@ -16,9 +16,12 @@ public class SumaryDTO {
         this.sellerName = sellerName;
         this.total = total;
     }
-
-    public SumaryDTO(SumaryProjection x) {
+    public SumaryDTO(SumaryProjection proj) {
+        sellerName = proj.getSellerName();
+        total = proj.getTotal();
     }
+
+   
 
     //Getters e Setters
     public String getSellerName() {
